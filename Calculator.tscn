@@ -1,0 +1,241 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://def_theme.tres" type="Theme" id=1]
+[ext_resource path="res://Calculator.gd" type="Script" id=2]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.768627, 0.941176, 0.760784, 1 )
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color( 0.352941, 0.72549, 0.658824, 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.117647, 0.376471, 0.431373, 1 )
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color( 0.768627, 0.941176, 0.760784, 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.176471, 0.105882, 0, 1 )
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color( 0.117647, 0.376471, 0.431373, 1 )
+
+[node name="Calculator" type="Node"]
+script = ExtResource( 2 )
+
+[node name="BG" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.176471, 0.105882, 0, 1 )
+
+[node name="InputField" type="Label" parent="."]
+anchor_right = 1.0
+margin_left = 16.0
+margin_top = 16.0
+margin_right = -16.0
+margin_bottom = 65.0
+theme = ExtResource( 1 )
+align = 2
+valign = 2
+clip_text = true
+
+[node name="Numbers" type="Node" parent="."]
+
+[node name="1" type="Button" parent="Numbers"]
+margin_left = 20.0
+margin_top = 242.0
+margin_right = 84.0
+margin_bottom = 306.0
+focus_mode = 0
+theme = ExtResource( 1 )
+enabled_focus_mode = 0
+text = "1"
+
+[node name="2" type="Button" parent="Numbers"]
+margin_left = 92.0
+margin_top = 242.0
+margin_right = 156.0
+margin_bottom = 306.0
+focus_mode = 0
+theme = ExtResource( 1 )
+enabled_focus_mode = 0
+text = "2"
+
+[node name="3" type="Button" parent="Numbers"]
+margin_left = 164.0
+margin_top = 242.0
+margin_right = 228.0
+margin_bottom = 306.0
+focus_mode = 0
+theme = ExtResource( 1 )
+enabled_focus_mode = 0
+text = "3"
+
+[node name="4" type="Button" parent="Numbers"]
+margin_left = 20.0
+margin_top = 170.0
+margin_right = 84.0
+margin_bottom = 234.0
+focus_mode = 0
+theme = ExtResource( 1 )
+enabled_focus_mode = 0
+text = "4"
+
+[node name="5" type="Button" parent="Numbers"]
+margin_left = 92.0
+margin_top = 170.0
+margin_right = 156.0
+margin_bottom = 234.0
+focus_mode = 0
+theme = ExtResource( 1 )
+enabled_focus_mode = 0
+text = "5"
+
+[node name="6" type="Button" parent="Numbers"]
+margin_left = 164.0
+margin_top = 170.0
+margin_right = 228.0
+margin_bottom = 234.0
+focus_mode = 0
+theme = ExtResource( 1 )
+enabled_focus_mode = 0
+text = "6"
+
+[node name="7" type="Button" parent="Numbers"]
+margin_left = 20.0
+margin_top = 98.0
+margin_right = 84.0
+margin_bottom = 162.0
+focus_mode = 0
+theme = ExtResource( 1 )
+enabled_focus_mode = 0
+text = "7"
+
+[node name="8" type="Button" parent="Numbers"]
+margin_left = 92.0
+margin_top = 98.0
+margin_right = 156.0
+margin_bottom = 162.0
+focus_mode = 0
+theme = ExtResource( 1 )
+enabled_focus_mode = 0
+text = "8"
+
+[node name="9" type="Button" parent="Numbers"]
+margin_left = 164.0
+margin_top = 98.0
+margin_right = 228.0
+margin_bottom = 162.0
+focus_mode = 0
+theme = ExtResource( 1 )
+enabled_focus_mode = 0
+text = "9"
+
+[node name="0" type="Button" parent="Numbers"]
+margin_left = 92.0
+margin_top = 314.0
+margin_right = 156.0
+margin_bottom = 378.0
+focus_mode = 0
+theme = ExtResource( 1 )
+enabled_focus_mode = 0
+text = "0"
+
+[node name="Operators" type="Node" parent="."]
+
+[node name="Add" type="Button" parent="Operators"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -83.0
+margin_top = 41.0
+margin_right = -19.0
+margin_bottom = 105.0
+focus_mode = 0
+theme = ExtResource( 1 )
+enabled_focus_mode = 0
+text = "+"
+
+[node name="Subtract" type="Button" parent="Operators"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -83.0
+margin_top = -31.0
+margin_right = -19.0
+margin_bottom = 33.0
+focus_mode = 0
+theme = ExtResource( 1 )
+enabled_focus_mode = 0
+text = "-"
+
+[node name="Divide" type="Button" parent="Operators"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -83.0
+margin_top = -103.0
+margin_right = -19.0
+margin_bottom = -39.0
+focus_mode = 0
+theme = ExtResource( 1 )
+enabled_focus_mode = 0
+text = "/"
+
+[node name="Multiply" type="Button" parent="Operators"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -83.0
+margin_top = 113.0
+margin_right = -19.0
+margin_bottom = 177.0
+focus_mode = 0
+theme = ExtResource( 1 )
+enabled_focus_mode = 0
+text = "*"
+
+[node name="Equate" type="Button" parent="Operators"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -155.0
+margin_top = 113.0
+margin_right = -91.0
+margin_bottom = 177.0
+focus_mode = 0
+theme = ExtResource( 1 )
+enabled_focus_mode = 0
+text = "="
+
+[node name="Clear" type="Button" parent="Operators"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -299.0
+margin_top = 113.0
+margin_right = -235.0
+margin_bottom = 177.0
+focus_mode = 0
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.117647, 0.376471, 0.431373, 1 )
+custom_colors/font_color_hover = Color( 0.176471, 0.105882, 0, 1 )
+custom_colors/font_color_pressed = Color( 0.768627, 0.941176, 0.760784, 1 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+enabled_focus_mode = 0
+text = "X"

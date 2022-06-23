@@ -1,0 +1,55 @@
+[gd_resource type="Theme" load_steps=8 format=2]
+
+[ext_resource path="res://Oxanium-Regular.ttf" type="DynamicFontData" id=1]
+
+[sub_resource type="DynamicFont" id=3]
+size = 32
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.352941, 0.72549, 0.658824, 1 )
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color( 0.768627, 0.941176, 0.760784, 1 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.352941, 0.72549, 0.658824, 1 )
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color( 0.117647, 0.376471, 0.431373, 1 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.117647, 0.376471, 0.431373, 1 )
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color( 0.352941, 0.72549, 0.658824, 1 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 48
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.768627, 0.941176, 0.760784, 1 )
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color( 0.117647, 0.376471, 0.431373, 1 )
+
+[resource]
+Button/colors/font_color = Color( 0.117647, 0.376471, 0.431373, 1 )
+Button/colors/font_color_hover = Color( 0.768627, 0.941176, 0.760784, 1 )
+Button/colors/font_color_pressed = Color( 0.352941, 0.72549, 0.658824, 1 )
+Button/fonts/font = SubResource( 3 )
+Button/styles/hover = SubResource( 5 )
+Button/styles/normal = SubResource( 4 )
+Button/styles/pressed = SubResource( 6 )
+Label/colors/font_color = Color( 0.117647, 0.376471, 0.431373, 1 )
+Label/fonts/font = SubResource( 1 )
+Label/styles/normal = SubResource( 2 )
