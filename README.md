@@ -7,3 +7,5 @@
 ## features.
 
 it just executes numbers with arithmetic operators. only supports integers 'cause i'm lazy.
+
+![Preview](readme-assets/preview.gif)
